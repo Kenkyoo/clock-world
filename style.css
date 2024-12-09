@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Orbitron;
+    height: 100%;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img1.jpg");
+    height: 100vh; /* Ajustar altura completa de la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.header-container h2 {
+    font-size: 40px;
+}
+
+.select-container {
+    width: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+#select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>') no-repeat right 10px center;
+    background-size: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#select:hover {
+    border-color: #888;
+}
+
+#select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+#select option {
+    padding: 10px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.clock-container {
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.clock {
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+
+.date {
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+
+.dates-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.dates-container p {
+    font-size: 25px;
+}
+
+.zone-container {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
